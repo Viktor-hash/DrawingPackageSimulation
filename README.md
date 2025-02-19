@@ -85,4 +85,4 @@ If more time were available, the following enhancements could be made:
 - Implement a user interface for user input.
 - Add support for additional widgets (e.g., triangles, polygons).
 - Include graphical rendering of the widgets.
-- Add serilog
+- Add Serilog

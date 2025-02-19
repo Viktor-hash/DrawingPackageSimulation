@@ -15,6 +15,18 @@ namespace DrawingPackageSimulation.Tests
         }
 
         [Test]
+        public void Constructor_ShouldThrowErrorIfDiameterHNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Ellipse(1, 1, -300, 200));
+        }
+
+        [Test]
+        public void Constructor_ShouldThrowErrorIfDiameterVNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Ellipse(1, 1, 300, -200));
+        }
+
+        [Test]
         public void Draw_ShouldReturnCorrectString()
         {
             var ellipse = new Ellipse(100, 150, 300, 200);

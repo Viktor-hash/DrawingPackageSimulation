@@ -15,6 +15,18 @@ namespace DrawingPackageSimulation.Tests
         }
 
         [Test]
+        public void Constructor_ShouldThrowErrorIfWidthNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Rectangle(10, 20, -30, 40));
+        }
+
+        [Test]
+        public void Constructor_ShouldThrowErrorIfHeightNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Rectangle(10, 20, 30, -40));
+        }
+
+        [Test]
         public void Draw_ShouldReturnCorrectString()
         {
             var rectangle = new Rectangle(10, 20, 30, 40);

@@ -15,6 +15,12 @@ namespace DrawingPackageSimulation.Tests
         }
 
         [Test]
+        public void Constructor_ShouldThrowErrorIfSizeNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Square(15, 25, -35));
+        }
+
+        [Test]
         public void Draw_ShouldReturnCorrectString()
         {
             var square = new Square(15, 25, 35);

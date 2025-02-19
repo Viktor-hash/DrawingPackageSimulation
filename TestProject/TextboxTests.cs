@@ -16,6 +16,24 @@ namespace DrawingPackageSimulation.Tests
         }
 
         [Test]
+        public void Constructor_ShouldThrowErrorIfWidthNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Textbox(5, 5, -200, 100, "sample text"));
+        }
+
+        [Test]
+        public void Constructor_ShouldThrowErrorIfHeightNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Textbox(5, 5, 200, -100, "sample text"));
+        }
+
+        [Test]
+        public void Constructor_ShouldThrowErrorIfTextNull()
+        {
+            Assert.Throws<ArgumentNullException>(() => new Textbox(5, 5, 200, 100, null!));
+        }
+
+        [Test]
         public void Draw_ShouldReturnCorrectString()
         {
             var textbox = new Textbox(5, 5, 200, 100, "sample text");

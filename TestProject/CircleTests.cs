@@ -15,6 +15,12 @@ namespace DrawingPackageSimulation.Tests
         }
 
         [Test]
+        public void Constructor_ShouldThrowErrorIfDiameterNegative()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new Circle(1, 1, -300));
+        }
+
+        [Test]
         public void Draw_ShouldReturnCorrectString()
         {
             var circle = new Circle(1, 1, 300);

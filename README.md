@@ -23,7 +23,7 @@ I respected SOLID principles by using interfaces and abstract classes.
 
 If a common behavior is added and should be part of a widget behavior I can then add it to the abstract class.
 
-If a new common behavior is added but must have a different implementation I can either add it to IWidget if it makes sense or create a new interface that can be inherited. (multiple interface inheritance is valid)
+If a new common behavior is added but must have a different implementation I can either add it to IWidget if it is a widget specific behavior or create a new interface that can be inherited. (multiple interface inheritance is valid)
 
 ## Running the application
 

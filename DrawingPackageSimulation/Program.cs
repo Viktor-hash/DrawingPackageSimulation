@@ -1,6 +1,8 @@
 ﻿using DrawingPackageSimulation;
 
-List<IWidget> widgets = new List<IWidget>
+try
+{
+    List<IWidget> widgets = new List<IWidget>
         {
             new Rectangle(10, 10, 30, 40),
             new Square(15, 30, 35),
@@ -9,5 +11,10 @@ List<IWidget> widgets = new List<IWidget>
             new Textbox(5, 5, 200, 100, "sample text")
         };
 
-var drawingSimulation = new DrawingSimulation(widgets);
-drawingSimulation.Draw();
+    var drawingSimulation = new DrawingSimulation(widgets);
+    drawingSimulation.Draw();
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"An error occurred: {ex.Message}");
+}

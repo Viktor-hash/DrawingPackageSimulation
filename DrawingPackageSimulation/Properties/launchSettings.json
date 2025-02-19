@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DrawingPackageSimulation": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

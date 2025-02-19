@@ -1,7 +1,7 @@
 # DrawingPackageSimulation
 ## Introduction
 
-The aim of this project is to develop a c# .net console application to simulate a drawing package. The application does not include a UI. It displays the parameters of each
+The aim of this project is to develop a c# .net console application to simulate a drawing package. The application does not include a UI. It displays the parameters of each widget.
 
 The application supports the following **5 widgets** (drawing primitives) :
 

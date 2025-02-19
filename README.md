@@ -52,6 +52,16 @@ Run the following command to execute the unit tests:
 ```bash
 dotnet test
 ```
+
+### Docker
+
+The main service project contains a docker file located at DrawingPackageSimulation/Dockerfile.
+
+```bash
+docker build -t drawing-package-simulation .
+docker run --rm drawing-package-simulation
+```
+
 ### Test required
 
 #### Hardcoded in the Main as input
